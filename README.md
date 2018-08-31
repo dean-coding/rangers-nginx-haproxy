@@ -1,4 +1,4 @@
-# springboot nginx cluster
+# springboot nginx & haproxy 负载均衡比对
 
 
 # 目标:
