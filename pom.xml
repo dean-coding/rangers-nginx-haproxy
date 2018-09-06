@@ -4,17 +4,17 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.rangers</groupId>
-	<artifactId>nginx.cluster</artifactId>
+	<artifactId>ranngers-nginx-haproxy</artifactId>
 	<version>1.0.1</version>
 	<packaging>jar</packaging>
 
-	<name>rangers-nginx-cluster</name>
-	<description>nginx cluster for rangers</description>
+	<name>rangers-nginx-haproxy</name>
+	<description>nginx vs haproxy for rangers</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.9.RELEASE</version>
+		<version>1.5.12.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 

@@ -1,4 +1,4 @@
-package com.rangers.nginx.cluster.ctrl;
+package com.rangers.nginx.v.haproxy.ctrl;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;

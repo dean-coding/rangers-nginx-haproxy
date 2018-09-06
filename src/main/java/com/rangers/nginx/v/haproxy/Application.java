@@ -1,4 +1,4 @@
-package com.rangers.nginx.cluster;
+package com.rangers.nginx.v.haproxy;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
