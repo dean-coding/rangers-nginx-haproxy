@@ -47,6 +47,8 @@ configure arguments: --prefix=/usr/local/....
 
 4.手动方式启动:
 
+	haproxy
+	
 <image src="src/main/resources/ha-pics/config.jpeg"></image>
 
  ```python
@@ -58,6 +60,7 @@ stats-ui地址(stats uri & bind 配置): localhost:9099/haproxy-stats
 
 <image src="src/main/resources/ha-pics/haproxy-stats.png"></image>
 
+	nginx
 <image src="src/main/resources/ng-pics/config.jpeg"></image>
  ```python
 nginx -c /usr/local/nginx-loadbalance/ng01/nginx.conf
