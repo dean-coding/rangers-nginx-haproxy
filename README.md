@@ -23,9 +23,11 @@ haproxy官网: https://www.haproxy.org/
 nginx官网: https://nginx.org/
   
 1.安装: 选择对应os的版本离线安装,选择性配置环境变量
-  > 在线安装示例:
-	    linux: # yum install haproxy
-	    mac: # brew install haproxy
+ ```python
+  在线安装示例:
+  > linux: # yum install haproxy
+  > mac: # brew install haproxy
+ ``` 
 	  
 2.版本:
 最终目的,成功使用cli命令客户端
@@ -44,49 +46,53 @@ configure arguments: --prefix=/usr/local/....
 3.配置:(详细配置见源码文件)
 
 4.手动方式启动:
-- **haproxy**
+
 <image src="src/main/resources/ha-pics/config.jpeg"></image>
 
  ```python
- 	  haproxy -f /usr/local/haproxy-loadbalance/ha01/haproxy.conf
-	  如上述的配置:
-	  stats-ui地址(stats uri & bind 配置): localhost:9099/haproxy-stats
-	  输入用户名密码(stats auth配置):root/root
+haproxy -f /usr/local/haproxy-loadbalance/ha01/haproxy.conf
+如上述的配置:
+stats-ui地址(stats uri & bind 配置): localhost:9099/haproxy-stats
+输入用户名密码(stats auth配置):root/root
 ```
 
 <image src="src/main/resources/ha-pics/haproxy-stats.png"></image>
 
-- **nginx**
 <image src="src/main/resources/ng-pics/config.jpeg"></image>
  ```python
-	nginx -c /usr/local/nginx-loadbalance/ng01/nginx.conf
+nginx -c /usr/local/nginx-loadbalance/ng01/nginx.conf
 ```
 
 ## ha&ng结果比对:
 
 ### backup
 
-- **haproxy**
-<image src="src/main/resources/ha-pics/backup.jpeg" width="100%" height="400px"></image>
-- **nginx**
-<image src="src/main/resources/ng-pics/backup.jpeg" width="100%" height="500px"></image>
+	haproxy
+	
+<image src="src/main/resources/ha-pics/backup.jpeg" width="60%"  height="400px"></image>
+
+	nginx
+	
+<image src="src/main/resources/ng-pics/backup.jpeg" width="60%" height="500px"></image>
 
 
 ### roundrobin
-- **haproxy**
+
+	haproxy
 
 <image src="src/main/resources/ha-pics/roundrobin.png" height="400px"></image>
-
-- **nginx**
-
+	
+	nginx
+	
 <image src="src/main/resources/ng-pics/roundrobin.png" height="400px"></image>
 
 ### test
 
-- **happroxy**
+	happroxy
 
 <image src="src/main/resources/ha-pics/test.jpeg" width="60%"></image>
-- **nginx**
+
+	nginx
 
 <image src="src/main/resources/ng-pics/test.png" width="60%"></image>
 
