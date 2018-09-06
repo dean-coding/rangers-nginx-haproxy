@@ -1,6 +1,10 @@
 # springboot nginx & haproxy 负载均衡比对
 
 	一文一言: 骑自行车的再努力也追不上路虎,说明,平台很重要
+
+# 简介:
+	<image src="src/main/resources/ha-ng-compare.png" width="80%" height="500px"></image>
+	
 # 测试目标:
 
 ```source-python
@@ -44,6 +48,7 @@
 	  stats-ui地址(stats uri & bind 配置): localhost:9099/haproxy-stats
 	  输入用户名密码(stats auth配置):root/root
 	  
+	<image src="src/main/resources/ha-pics/haproxy-stats.png"></image>
 	
 	- **nginx**
 	<image src="src/main/resources/ng-pics/config.jpeg"></image>
@@ -58,29 +63,29 @@
 ### backup
 
 - **haproxy**
-<image src="src/main/resources/ha-pics/backup.jpeg"></image>
+<image src="src/main/resources/ha-pics/backup.jpeg" width="100%" height="400px"></image>
 - **nginx**
-<image src="src/main/resources/ng-pics/backup.jpeg"></image>
+<image src="src/main/resources/ng-pics/backup.jpeg" width="100%" height="500px"></image>
 
 
 ### roundrobin
 
 - **haproxy**
 
-<image src="src/main/resources/ha-pics/roundrobin.png"></image>
+<image src="src/main/resources/ha-pics/roundrobin.png" height="400px"></image>
 
 - **nginx**
 
-<image src="src/main/resources/ng-pics/roundrobin.png"></image>
+<image src="src/main/resources/ng-pics/roundrobin.png" height="400px"></image>
 
 ### test
 
 - **happroxy**
 
-<image src="src/main/resources/ha-pics/test.jpeg"></image>
+<image src="src/main/resources/ha-pics/test.jpeg" width="60%"></image>
 - **nginx**
 
-<image src="src/main/resources/ng-pics/test.png"></image>
+<image src="src/main/resources/ng-pics/test.png" width="60%"></image>
 
 ## 配置源码见:  
 
